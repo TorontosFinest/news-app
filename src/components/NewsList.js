@@ -12,7 +12,7 @@ export default function NewsList(props) {
     });
   }, []);
   return (
-    <div>
+    <div className="newsList" id="newsList">
       {articles.map((article) => {
         return <NewsItem article={article} />;
       })}
