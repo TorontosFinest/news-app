@@ -8,18 +8,18 @@ export default function Banner() {
       <video className="video" src={VideoBG} autoPlay loop muted />
       <div className="content">
         <h1>News Today</h1>
-        <p>Stay up to date with whats going on in our world</p>
-        <button className="view-articles">
-          <Link
-            to="newsList"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            View Articles
-          </Link>
-        </button>
+        <h1>Stay up to date with whats going on in our world</h1>
+
+        <Link
+          className="view-articles"
+          to="newsList"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          View Articles
+        </Link>
       </div>
     </div>
   );
