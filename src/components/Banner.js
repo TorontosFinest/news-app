@@ -3,6 +3,8 @@ import VideoBG from "../assets/videoBG.mp4";
 import { Link } from "react-scroll";
 
 export default function Banner() {
+  const dateToFormat = "2022-04-19T12:59-0500";
+
   return (
     <div className="banner">
       <video className="video" src={VideoBG} autoPlay loop muted />
@@ -21,6 +23,9 @@ export default function Banner() {
           View Articles
         </Link>
       </div>
+      <h1 className="headline">
+        NEWS ARTICLES FOR: {new Date().toLocaleString() + ""}
+      </h1>
     </div>
   );
 }
