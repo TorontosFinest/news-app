@@ -23,7 +23,8 @@ export default function NewsItem(props) {
             </a>
           </h4>
           <p>
-            {props.article.description == null ? (
+            {props.article.description == null ||
+            props.article.description == "" ? (
               <p>
                 <b>
                   {" "}
