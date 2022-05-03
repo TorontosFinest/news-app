@@ -14,9 +14,9 @@ export default function NewsItem(props) {
           )}
         </div>
         <div className="card-body">
-          <span className="tag tag-teal">
+          <div className="tag tag-teal">
             Source : {props.article.source.name}
-          </span>
+          </div>
           <h4>
             <a href={props.article.url} target="_blank">
               {props.article.title}

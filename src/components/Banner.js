@@ -24,7 +24,7 @@ export default function Banner() {
         </Link>
       </div>
       <h1 className="headline">
-        NEWS ARTICLES FOR: {new Date().toLocaleString() + ""}
+        LEADING ARTICLES FOR: {new Date().toLocaleString() + ""}
       </h1>
     </div>
   );
